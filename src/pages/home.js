@@ -19,10 +19,10 @@ export function Home({ notes, setNotes }) {
           <div >
             {notes.map((item) => (
               <div className="body-row">
-                <ul>{item.title}{" "}<span>
+                <ul>{item.title}
                 <Link className="btn2" exact to={`edit/${item.id}`}>
                    Edit
-                </Link></span>
+                </Link>
                 <button className="btn"
                   onClick={() => {
                     deleteNote(item.id);

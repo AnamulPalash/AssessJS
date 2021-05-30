@@ -2,7 +2,7 @@ export function ID() {
 return Math.floor(new Date().valueOf() * Math.random());
 }
 
-
+// Local Storage
 export function getItem(key, defaultValue) {
   let value = localStorage.getItem(key);
   if (value) {
@@ -22,9 +22,9 @@ export function removeItem(key) {
 }
 
 export function getAllNotes() {
-  if (localStorage.getItem("notes")) {
-    if (JSON.parse(localStorage.getItem("notes")).length > 0) {
-      return JSON.parse(localStorage.getItem("notes"));
+  if (sessionStorage.getItem("notes")) {
+    if (JSON.parse(sessionStorage.getItem("notes")).length > 0) {
+      return JSON.parse(sessionStorage.getItem("notes"));
     } else {
       return [];
     }
@@ -33,7 +33,7 @@ export function getAllNotes() {
 }
 
 export function setAllNotes(data) {
-  localStorage.setItem("notes", JSON.stringify(data));
+  sessionStorage.setItem("notes", JSON.stringify(data));
 }
 
 export function getSessionItem(key, defaultValue) {
