@@ -1,0 +1,39 @@
+.data{
+    color:black;
+}
+
+.btn{
+    background-color: rgb(207, 3, 3);
+    font: 12px;
+    color: white;
+    padding: 7px;
+    margin: 1px 1px;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+}
+
+.btn2{
+    background-color: rgb(207, 3, 3);
+    font: 11px;
+    color: white;
+    padding: 5px;
+    margin: 1px 1px;
+    cursor: pointer;
+    border: none;
+}
+
+.body-row {
+	padding: 5px;
+	background-color: rgb(255, 254, 212);
+	border-bottom: 2px solid rgb(92, 158, 6);
+	transition: background-color 300ms;
+	color: rgb(0, 0, 0);
+    text-align: left;    
+}
+.body-row:hover {
+	background-color: rgb(214, 255, 119);
+}
+.body-row > span {
+	color: rgb(69, 112, 0);
+}
